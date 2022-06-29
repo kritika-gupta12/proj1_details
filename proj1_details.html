@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://fonts.googleapis.com/css2?family=Acme" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body::before {
+            content: "";
+            background: url('https://studyworkgrow.com.au/wp-content/uploads/2019/02/Choosing-Free-Resume-Templates.png') no-repeat center center /cover;
+            /* background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 105vh;
+            z-index: -1;
+            opacity: 0.75;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            position: fixed;
+            display: inline-block;
+            top: 10px;
+            left: 60px;
+        }
+
+        .left img {
+            width: 100px;
+            display: block;
+            margin: auto;
+            /* filter: invert(100%); */
+        }
+
+        .left h3 {
+            text-align: center;
+            font-family: "Sofia", sans-serif;
+            color: white;
+            line-height: 0px;
+    font-size: 27px;
+            text-shadow: 3px 3px 3px #ababab;
+        }
+
+        .mid {
+            /* position: fixed;
+            left:445px;
+            top:0px; */
+            /* border: 2px solid red; */
+            width: 640px;
+            /* height:40px; */
+            margin: 40px auto;
+            padding: 0px;
+        }
+        
+        .nav {
+            background-color: black;
+            /* border: 2px solid rgb(35, 99, 218); */
+            border-radius: 40px;
+            margin: 0px auto;
+        }
+        
+        .nav li {
+            display: inline-block;
+            list-style-type: none;
+            font-size: 24px;
+            font-family: 'Acme', sans-serif;
+            height: 32px;
+            margin: auto;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color: white;
+            padding: 12px 30px;
+        }
+
+        .nav li a:hover,
+        .nav li a:active {
+            font-weight: bold;
+            /* color: aliceblue; */
+        }
+
+        .right {
+            position: fixed;
+            /* border: 2px solid red; */
+            display: inline-block;
+            top: 15px;
+            right: 10px;
+        }
+        
+        .btn {
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 16px;
+            border: 2px solid grey;
+            border-radius: 15px;
+            font-size: 15px;
+            font-family: 'Acme', sans-serif;
+            cursor: pointer;
+            width: 120px;
+        }
+
+        .btn:hover {
+            font-weight: bold;
+            /* color: aliceblue; */
+        }
+        .form_record{
+            /* border: 2px solid red; */
+            width: 580px;
+            margin: 145px auto;
+            text-align: center;
+        }
+        .form_record h3{
+            font-family: 'Acme', sans-serif;
+            font-size: 30px;
+        }
+        .form_record form input{
+            border: 3px solid gray;
+            border-radius: 50px;
+            padding:10px;
+            margin:10px auto;
+            width: 500px;
+            text-align: center;
+            font-size: 15px;
+        }
+        #submit, #reset{
+            width:200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="left">
+        <img src="Images\cv_logo.jpg">
+        <h3>Let's make it Easy!</h3>
+    </div>
+
+    <div class="mid">
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">View Saved</a></li>
+            <li><a href="#">Format</a></li>
+            <li><a href="#">Find Us</a></li>
+        </ul>
+    </div>
+
+    <div class="right">
+        <button class="btn">Call us Now!</button>
+        <button class="btn">Email us</button>
+    </div>
+
+    <div class="form_record">
+        <h3>Enter the details</h3>
+        <form action="cv.php">
+            <input type="text" placeholder="Enter Name">
+            <input type="text" placeholder="Enter Address">
+            <input type="email" placeholder="Enter Email">
+            <input type="number" placeholder="Enter Mobile no.">
+            <input type="submit" value="Submit Now" class="btn" id="submit">
+            <input type="reset" value="Reset" class="btn" id="reset">
+        </form>
+    </div>
+</body>
+
+</html>
